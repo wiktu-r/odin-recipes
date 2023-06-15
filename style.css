@@ -33,7 +33,7 @@ p>*, ul>*, ol>* {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    width: 30em;
+    max-width: 30em;
     height: 10em;
     border-radius: 30px;
     justify-content: center;
@@ -72,8 +72,8 @@ p>*, ul>*, ol>* {
 }
 
 .food:hover {
-    /* transform: scale(1.2); */
-    flex: 5; 
+    transform: scale(1.2);
+    flex: 3; 
 }
 
 a, a:visited {
