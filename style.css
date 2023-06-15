@@ -3,6 +3,10 @@
     margin: 0px;
 }
 
+body {
+    background-image: linear-gradient(-90deg, red, white, green);
+}
+
 h1, h2 {
     text-align: center;
 }
@@ -11,5 +15,57 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 30em;
+}
+
+#foodMenu {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    height: 10em;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;   
+    transition: ease-in-out 0.1s;
+}
+
+#pizza {
+    background-image: url(recipes/Quick-and-Easy-Pizza-Crust.webp);
+}
+
+#lasagna {
+    background-image: url(recipes/Lasagna-Recipe.webp);
+}
+
+#risotto {
+    background-image: url(recipes/risotto-rice-.jpg);
+}
+
+.food {
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    padding: 1em;
+    transition: ease-in-out 0.1s;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#foodMenu:hover {
+    height: 20em;
+}
+
+.food:hover {
+    /* transform: scale(1.2); */
+    flex: 5; 
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px black;
 }
